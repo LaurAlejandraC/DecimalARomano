@@ -18,5 +18,9 @@ public class pruebas{
 		str1 = new String("XV");
 		str2 = conversion.numeroDecimalARomano(15);
 		System.out.println((str1.equals(str2))?"Cuarta prueba correcta":"Cuarta prueba incorrecta");
+
+		str1 = new String("ḾḾḾĎḸẊẊẊMMDLXXXVIII");
+		str2 = conversion.numeroDecimalARomano(3582588);
+		System.out.println((str1.equals(str2))?"Quinta prueba correcta":"Quinta prueba incorrecta");
 	}
 }
