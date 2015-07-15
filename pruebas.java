@@ -18,6 +18,5 @@ public class pruebas{
 		str1 = new String("XV");
 		str2 = conversion.numeroDecimalARomano(15);
 		System.out.println((str1.equals(str2))?"Cuarta prueba correcta":"Cuarta prueba incorrecta");
-
 	}
 }
