@@ -22,5 +22,9 @@ public class pruebas{
 		str1 = new String("ḾḾḾĎḸẊẊẊMMDLXXXVIII");
 		str2 = conversion.numeroDecimalARomano(3582588);
 		System.out.println((str1.equals(str2))?"Quinta prueba correcta":"Quinta prueba incorrecta");
+
+		str1 = new String("El número máximo es 3999999");
+		str2 = conversion.numeroDecimalARomano(4000000);
+		System.out.println((str1.equals(str2))?"Sexta prueba correcta":"Sexta prueba incorrecta");
 	}
 }
