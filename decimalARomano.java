@@ -65,9 +65,29 @@ public class decimalARomano{
 						break;
 			}
 		}else if(digitos[0] == 4){
-			//insertar switch
+			switch(nDigitos){
+				case 0: resultado = resultado.concat("ĪṼ");
+						numeroDecimal -= 4000;
+						break;
+				case 1: resultado = resultado.concat("ẊḸ");
+						numeroDecimal -= 40000;
+						break;
+				case 2: resultado = resultado.concat("ČĎ");
+						numeroDecimal -= 400000;
+						break;
+			}
 		}else{
-			//caso del 9, insertar switch
+			switch(nDigitos){
+				case 0: resultado = resultado.concat("ĪẊ");
+						numeroDecimal -= 9000;
+						break;
+				case 1: resultado = resultado.concat("ẊČ");
+						numeroDecimal -= 90000;
+						break;
+				case 2: resultado = resultado.concat("ČḾ");
+						numeroDecimal -= 900000;
+						break;
+			}
 		}
 		return numeroDecimal;
 	}
